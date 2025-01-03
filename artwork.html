@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artwork | Neeti Shah</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <img src="images/banner.png" alt="Website Banner">
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Neeti Shah Logo">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="work.html">Work Experience</a>
+      <a href="research.html">Research Papers</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="artwork.html" class="active">Artwork</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact Me</a>
+    </nav>
+  </header>
+
+  <!-- Artwork Section -->
+  <section class="artwork-section">
+    <h1>Artwork</h1>
+    <p>Click on an artwork to view it in full-screen mode.</p>
+
+    <!-- Artwork Gallery -->
+    <div class="artwork-gallery">
+      <img src="images/art1.jpeg" alt="Artwork 1" class="artwork-img" onclick="openLightbox(0)">
+      <img src="images/art2.jpeg" alt="Artwork 2" class="artwork-img" onclick="openLightbox(1)">
+      <img src="images/art3.jpeg" alt="Artwork 3" class="artwork-img" onclick="openLightbox(2)">
+      <img src="images/art4.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(3)">
+      <img src="images/art5.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(4)">
+      <img src="images/art6.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(5)">
+      <img src="images/art7.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(6)">
+      <img src="images/art8.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(7)">
+      <img src="images/art9.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(8)">
+      <img src="images/art10.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(9)">
+      <img src="images/art11.jpeg" alt="Artwork 4" class="artwork-img" onclick="openLightbox(10)">
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+ <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <a href="https://neetishah2001.wordpress.com/" target="_blank">
+          <img src="images/wordpress-logo.png" alt="WordPress Blog">
+        </a>
+        <p>Visit My Blog</p>
+      </div>
+      <div class="footer-section">
+        <a href="https://youtube.com/your-channel" target="_blank">
+          <img src="images/youtube-logo.png" alt="YouTube">
+        </a>
+        <p>Watch on YouTube</p>
+      </div>
+      <div class="footer-section">
+        <a href="https://github.com/Neeti-shah05" target="_blank">
+          <img src="images/github-logo.png" alt="GitHub">
+        </a>
+        <p>View My GitHub</p>
+      </div>
+      <div class="footer-section">
+        <a href="contact.html">
+          <img src="images/email-logo.png" alt="Contact Me">
+        </a>
+        <p>Contact Me</p>
+      </div>
+    </div>
+    <p>© 2024 Neeti Shah. All rights reserved.</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

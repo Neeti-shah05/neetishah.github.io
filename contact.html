@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Neeti Shah</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="images/banner.png" alt="Description">
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Description">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="work.html">Work Experience</a>
+      <a href="research.html">Research Papers</a>
+      <a href="conferences.html">Conferences</a>
+      <a href="artwork.html">Artwork</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html" class="active">Contact Me</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <p>If you have any questions, feel free to reach out!</p>
+
+    <!-- Contact Form (Using FormSubmit) -->
+    <form action="https://formsubmit.co/neeti@shah.it" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      
+      <!-- Redirect to a thank-you page after submission -->
+      <input type="hidden" name="_next" value="thank-you.html">
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <a href="https://neetishah2001.wordpress.com/" target="_blank">
+          <img src="images/wordpress-logo.png" alt="WordPress Blog">
+        </a>
+        <p>Visit My Blog</p>
+      </div>
+      <div class="footer-section">
+        <a href="https://youtube.com/your-channel" target="_blank">
+          <img src="images/youtube-logo.png" alt="YouTube">
+        </a>
+        <p>Watch on YouTube</p>
+      </div>
+      <div class="footer-section">
+        <a href="https://github.com/Neeti-shah05" target="_blank">
+          <img src="images/github-logo.png" alt="GitHub">
+        </a>
+        <p>View My GitHub</p>
+      </div>
+      <div class="footer-section">
+        <a href="contact.html">
+          <img src="images/email-logo.png" alt="Contact Me">
+        </a>
+        <p>Contact Me</p>
+      </div>
+    </div>
+    <p>© 2024 Neeti Shah. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
